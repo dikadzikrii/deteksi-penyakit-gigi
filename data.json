@@ -1,32 +1,50 @@
 {"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hai","Haii","Hola"],
+     "responses": ["Halo, apa ada yang bisa saya bantu?"],
+     "context": [""]
+    },
+    {"tag": "penyebab",
+     "patterns": ["penyebab kanker mulut","apa penyebab kanker mulut","kanker mulut"],
+     "responses": ["Terdapat beberapa penyebab kanker mulut terjadi, salah satunya adalah merokok. Biasanya, gejala awal penyakit kanker mulut adalah munculnya luka pada jaringan tersebut namun tidak kunjung sembuh. Karena itulah, kanker mulut seringkali sulit dibedakan dengan sariawan atau radang tenggorokan."],
+     "context": [""]
+    },
+    {"tag": "deteksi",
+     "patterns": ["cara mendeteksi kanker mulut","bagaimana cara mendeteksinya","cara mendeteksi"],
+     "responses": ["Terdapat sariawan atau luka di rongga mulut yang berulang dan tidak kunjung sembuh sampai lebih dari 2 minggu.",
 
-             {"tag": "apa",
-              "patterns": ["Apakah yang dimaksud Stunting?","Stunting itu apa?","Apa itu Stunting?","stunting itu apa?","stunting adalah?"],
-              "responses": ["Stunting adalah kondisi gagal tumbuh pada anak berusia dibawah lima tahun (balita) akibat kekurangan asupan gizi kronis dan infeksi berulang terutama pada periode 1.000 Hari Pertama Kehidupan (HPK), yaitu dari janin hingga anak berusia 23 bulan. Stunting ditentukan oleh indeks antropometri yang menggunakan data panjang badan berdasarkan umur (PB/U) untuk anak usia dibawah 2 tahun dan menggunakan data tinggi badan berdasarkan umur (TB/U) untuk anak usia 2 tahun ke atas. Dalam laporan Riskesdas, kondisi stunting merupakan gabungan antara anak dengan status gizi pendek dan sangat pendek."]
-             },
-              {"tag": "mendeteksi",
-              "patterns": [ "Bagaimana cara mendeteksi stunting?","Bagaimana tau stunting?","Cara mendeteksi?"],
-              "responses": ["Pertumbuhan dan perkembangan merupakan hal yang seharusnya selalu dipantau pada setiap kunjungan ke dokter. Pemantauan pertumbuhan anak biasanya dilakukan dengan memplot berat badan dan tinggi badan ke dalam suatu kurva pertumbuhan. Seorang anak dikatakan pendek  jika tinggi badan atau panjang badan menurut usia lebih dari dua standar deviasi di bawah median kurve standar pertumbuhan anak WHO."]
-             },
-              {"tag": "ciri",
-              "patterns": [ "Ciri Stunting?", "Ciri ciri anak stunting?", " Ciri?","Ciri ciri"],
-              "responses": ["Keterlambatan pertumbuhan, Performa buruk pada tes perhatian dan memori belajar, Tanda pubertas terlambatAnak menjadi pendiam, sulit melakukan eye contact saat usia 8-10 tahun, Wajah tampak lebih muda dari usianya, Mudah mengalami penyakit infeksi"]
-             },
-             {"tag": "diatasi",
-              "patterns": ["Apakah stunting masih bisa diatasi?","bisa diatasi?","cara mengatasi?"],
-              "responses": ["Sayangnya, stunting adalah kondisi gangguan pertumbuhan yang tidak bisa dikembalikan seperti semula. Maksudnya, ketika seorang anak sudah stunting atau pendek sejak ia masih balita, maka pertumbuhannya akan terus lambat hingga ia dewasa. Saat puber, ia tidak dapat mencapai pertumbuhan maksimal akibat sudah terkena stunting di waktu kecil. Meskipun, Walaupun diberikan makanan yang kaya akan gizi, namun tetap saja pertumbuhannya tidak dapat maksimal."]
-             },
-             {"tag": "penyakit",
-              "patterns": ["Apakah stunting itu penyakit?","stunting penyakit?","penyakit?","itu penyakit?"],
-              "responses": ["Stunting bukan penyakit, tapi kondisi gagal tumbuh karena kurangnya asupan makanan dan terjadinya infeksi berulang dalam jangka waktu tertentu (kronis) yang terjadi pada periode emas atau 1.000 HPK seorang anak yaitu  sejak berada dalam kandungan hingga usia 2 tahun."]
-             },
-             {"tag": "dampak",
-              "patterns": ["Apa dampak?","dampak?","dampaknya?"],
-              "responses": ["Selain gangguan pertumbuhan yang diindikasikan oleh stunting, biasanya anak juga dapat mengalami gangguan perkembangan akibat masalah gizi kronis, baik gangguan pada perkembangan kognitif, motorik, ataupun sistem kekebalan tubuh. Gangguan perkembangan inilah yang kemudian dapat menyebabkan anak mengalami kesulitan belajar atau mudah terserang penyakit. Kondisi kurang gizi kronis yang tidak dicegah atau terlambat dikoreksi dapat meningkatkan resiko terkena penyakit tidak menular (PTM) di usia lebih lanjut (seperti diabetes, penyakit jantung, kanker, stroke, dan lain-lain) pada level individu dan menurunkan angka produktivitas sumber daya manusia pada level populasi."]
-             },
-             {"tag": "cegah",
-              "patterns": ["Apa cagah?","dapat dicegah?","cegah?"],
-              "responses": ["Stunting dapat dicegah atau dikoreksi jika dilakukan sebelum atau selama periode emas. Karenanya berbagai intervensi penting dilakukan sejak dini, mulai dari mempersiapkan kondisi gizi dan kesehatan calon ibu hingga memastikan kesehatan yang baik dan gizi yang cukup terutama pada 1000 Hari Pertama Kehidupan, yaitu sejak anak berada dalam kandungan hingga usia 2 tahun."]
-             }
-
-]}
+     "Sariawan disertai dengan perdarahan.",
+     
+     "Munculnya bercak merah atau putih di rongga mulut.",
+     
+     "Munculnya benjolan atau penebalan di dinding mulut yang tidak hilang dalam waktu lama.",
+     
+     "Mati rasa dan nyeri di mulut.",
+     
+     "Kesulitan menggerakkan lidah atau rahang.",
+     
+     "Nyeri hebat di tenggorokan dan telinga.",
+     
+     "Kesulitan untuk menelan dan berbicara.",
+     
+     "Penurunan berat badan secara drastis tanpa sebab yang jelas."],
+     "context": [""]
+    },
+    {"tag": "mengobati",
+     "patterns": ["langkah-langkah mengobati","cara mengobati","cara mengobati kanker mulut"],
+     "responses": ["Sorry, can't understand you"],
+     "context": [""]
+    },
+    {"tag": "cegah",
+     "patterns": ["cara mencegah kanker mulut","pencegahan kanker mulut","bagaimana cara mencegah kanker mulut"],
+     "responses": ["Sorry, can't understand you"],
+     "context": [""]
+    },
+    {"tag": "random",
+     "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
+     "responses": ["Sorry, can't understand you"],
+     "context": [""]
+    }
+    
+]
+}
