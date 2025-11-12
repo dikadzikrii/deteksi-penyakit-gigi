@@ -1,50 +1,192 @@
-{"intents": [
-    {"tag": "greeting",
-     "patterns": ["Hai","Haii","Hola"],
-     "responses": ["Halo, apa ada yang bisa saya bantu?"],
-     "context": [""]
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hai", "Haii", "Hola", "Hello", "Hi", "Selamat pagi", "Selamat siang", "Halo"],
+      "responses": [
+        "Halo! Ada yang bisa saya bantu seputar kesehatan gigi dan mulut?",
+        "Hai! Mau tanya soal penyakit gigi atau upload gambar untuk deteksi?"
+      ],
+      "context": [""]
     },
-    {"tag": "penyebab",
-     "patterns": ["penyebab kanker mulut","apa penyebab kanker mulut","kanker mulut"],
-     "responses": ["Terdapat beberapa penyebab kanker mulut terjadi, salah satunya adalah merokok. Biasanya, gejala awal penyakit kanker mulut adalah munculnya luka pada jaringan tersebut namun tidak kunjung sembuh. Karena itulah, kanker mulut seringkali sulit dibedakan dengan sariawan atau radang tenggorokan."],
-     "context": [""]
+    {
+      "tag": "Impaksi_gigi",
+      "patterns": [
+        "Apa itu impaksi gigi?",
+        "Gigi bungsu impaksi",
+        "Gigi saya terpendam",
+        "Gigi bungsu tumbuh miring",
+        "Mengapa gigi bungsu sakit",
+        "Gigi bungsu saya sakit"
+      ],
+      "responses": [
+        "Impaksi gigi terjadi ketika gigi tidak bisa tumbuh sempurna karena ruang rahang terbatas atau posisi gigi miring. Gejala: nyeri, bengkak, sakit saat mengunyah, kadang demam ringan. Pencegahan: rutin kontrol gigi bungsu ke dokter, periksa posisi gigi sejak remaja.",
+        "Gigi bungsu yang impaksi bisa menimbulkan nyeri dan bengkak. Pencegahan terbaik: kontrol rutin ke dokter gigi dan pantau pertumbuhan sejak remaja."
+      ],
+      "context": [""]
     },
-    {"tag": "deteksi",
-     "patterns": ["cara mendeteksi kanker mulut","bagaimana cara mendeteksinya","cara mendeteksi"],
-     "responses": ["Terdapat sariawan atau luka di rongga mulut yang berulang dan tidak kunjung sembuh sampai lebih dari 2 minggu.",
-
-     "Sariawan disertai dengan perdarahan.",
-     
-     "Munculnya bercak merah atau putih di rongga mulut.",
-     
-     "Munculnya benjolan atau penebalan di dinding mulut yang tidak hilang dalam waktu lama.",
-     
-     "Mati rasa dan nyeri di mulut.",
-     
-     "Kesulitan menggerakkan lidah atau rahang.",
-     
-     "Nyeri hebat di tenggorokan dan telinga.",
-     
-     "Kesulitan untuk menelan dan berbicara.",
-     
-     "Penurunan berat badan secara drastis tanpa sebab yang jelas."],
-     "context": [""]
+    {
+      "tag": "Implan_gigi",
+      "patterns": [
+        "Apa itu implan gigi?",
+        "Bagaimana cara pasang gigi palsu permanen?",
+        "Gigi hilang ingin diganti",
+        "Pasang implan gigi",
+        "Gigi hilang bisa diganti dengan apa",
+        "Implan gigi aman tidak?"
+      ],
+      "responses": [
+        "Implan gigi adalah prosedur medis untuk mengganti gigi hilang menggunakan titanium yang ditanam di rahang. Pencegahan masalah: jaga kebersihan mulut, hindari merokok, kontrol rutin ke dokter.",
+        "Setelah pasang implan gigi, penting untuk menjaga kebersihan mulut dan rutin kontrol agar implan tetap sehat."
+      ],
+      "context": [""]
     },
-    {"tag": "mengobati",
-     "patterns": ["langkah-langkah mengobati","cara mengobati","cara mengobati kanker mulut"],
-     "responses": ["Sorry, can't understand you"],
-     "context": [""]
+    {
+      "tag": "Kerak_Gigi",
+      "patterns": [
+        "Kerak gigi",
+        "Plak gigi",
+        "Tartar",
+        "Gigi terasa kasar",
+        "Gusi berdarah saat sikat gigi",
+        "Bagaimana menghilangkan kerak gigi"
+      ],
+      "responses": [
+        "Kerak gigi terbentuk akibat penumpukan plak yang mengeras. Gejala: gigi kasar, gusi merah/berdarah, bau mulut. Pencegahan: sikat gigi 2x sehari, benang gigi, scaling rutin setiap 6 bulan, kurangi gula dan makanan lengket.",
+        "Plak yang mengeras menjadi kerak gigi. Pencegahan terbaik: sikat rutin, flossing, dan kontrol ke dokter gigi."
+      ],
+      "context": [""]
     },
-    {"tag": "cegah",
-     "patterns": ["cara mencegah kanker mulut","pencegahan kanker mulut","bagaimana cara mencegah kanker mulut"],
-     "responses": ["Sorry, can't understand you"],
-     "context": [""]
+    {
+      "tag": "Kista_Gigi",
+      "patterns": [
+        "Kista gigi",
+        "Cyst gigi",
+        "Kantong cairan di gigi",
+        "Benjolan di gigi",
+        "Gigi bengkak dan nyeri"
+      ],
+      "responses": [
+        "Kista gigi adalah kantong berisi cairan di sekitar akar gigi. Gejala: nyeri, bengkak, gigi goyah. Pencegahan: jaga kebersihan mulut, rutin periksa ke dokter, segera tangani infeksi gigi atau gusi.",
+        "Kista bisa menyebabkan gigi goyah dan nyeri. Pencegahan: periksa gigi secara rutin dan jangan menunda perawatan infeksi."
+      ],
+      "context": [""]
     },
-    {"tag": "random",
-     "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
-     "responses": ["Sorry, can't understand you"],
-     "context": [""]
+    {
+      "tag": "Odontektomi_Gigi_bungsu",
+      "patterns": [
+        "Odontektomi gigi bungsu",
+        "Operasi gigi bungsu",
+        "Cabut gigi bungsu",
+        "Gigi bungsu tumbuh miring harus dicabut",
+        "Sakit karena gigi bungsu"
+      ],
+      "responses": [
+        "Odontektomi adalah pencabutan gigi bungsu yang bermasalah atau terpendam. Pencegahan: kontrol rutin pertumbuhan gigi bungsu sejak remaja dan lakukan tindakan bila diperlukan.",
+        "Jika gigi bungsu menimbulkan nyeri, dokter mungkin menyarankan odontektomi. Pencegahan terbaik: cek gigi rutin sejak remaja."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "Endo_Primer_dengan_Periode_Sekunder",
+      "patterns": [
+        "Endo primer dan sekunder",
+        "Perawatan saluran akar gigi",
+        "Root canal primer dan sekunder",
+        "Gigi sakit perlu perawatan akar"
+      ],
+      "responses": [
+        "Perawatan endodontik primer dengan sekunder dilakukan untuk merawat saraf gigi yang terinfeksi. Pencegahan: rajin membersihkan gigi, segera tangani gigi berlubang, rutin kontrol ke dokter gigi.",
+        "Root canal primer dan sekunder membantu mengobati infeksi akar. Pencegahan: jangan menunda perawatan gigi dan periksa rutin."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "Lesi_Endodontik_Primer",
+      "patterns": [
+        "Lesi endodontik primer",
+        "Infeksi akar gigi primer",
+        "Gigi berlubang parah",
+        "Nyeri gigi spontan"
+      ],
+      "responses": [
+        "Lesi endodontik primer adalah kerusakan jaringan di sekitar akar gigi akibat infeksi. Pencegahan: jangan menunda perawatan gigi berlubang, jaga kebersihan mulut, kontrol rutin ke dokter gigi.",
+        "Infeksi akar gigi bisa menyebabkan nyeri spontan. Pencegahan: segera tangani gigi berlubang."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "Lesi_Gabungan_Sejati",
+      "patterns": [
+        "Lesi gabungan sejati",
+        "Kerusakan gigi dan gusi bersamaan",
+        "Lesi gabungan gigi",
+        "Gusi bengkak dan gigi rusak"
+      ],
+      "responses": [
+        "Lesi gabungan sejati terjadi ketika ada kerusakan di gigi maupun jaringan sekitarnya. Pencegahan: jaga kebersihan mulut, sikat gigi rutin, benang gigi, periksa ke dokter gigi secara berkala.",
+        "Kerusakan gabungan gigi dan gusi bisa dicegah dengan kontrol rutin dan menjaga kebersihan mulut."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "Lesi_Periodontal_Primer",
+      "patterns": [
+        "Lesi periodontal primer",
+        "Penyakit gusi primer",
+        "Gusi bengkak dan berdarah",
+        "Gigi goyah karena gusi"
+      ],
+      "responses": [
+        "Lesi periodontal primer adalah kerusakan pada gusi dan jaringan penyangga gigi akibat infeksi. Pencegahan: sikat gigi rutin, gunakan benang gigi, kontrol ke dokter gigi, hindari merokok dan makanan manis berlebih.",
+        "Penyakit gusi primer bisa dicegah dengan perawatan mulut yang baik dan kontrol rutin."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "Periode_Primer_dengan_Endo_Sekunder",
+      "patterns": [
+        "Periode primer endo sekunder",
+        "Perawatan gigi kombinasi primer dan sekunder",
+        "Gigi bermasalah kambuh",
+        "Gigi memerlukan perawatan ulang"
+      ],
+      "responses": [
+        "Periode primer dengan endo sekunder adalah kombinasi perawatan pada jaringan periodontal dan saraf gigi yang sebelumnya sudah diobati. Pencegahan: jaga kebersihan mulut, kontrol rutin ke dokter, tangani masalah gigi sedini mungkin.",
+        "Perawatan kombinasi ini dilakukan bila infeksi atau kerusakan kambuh. Pencegahan terbaik: periksa gigi secara rutin."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "jenis_penyakit_gigi",
+      "patterns": [
+        "Jenis penyakit gigi apa aja?",
+        "Daftar penyakit gigi",
+        "Apa saja jenis penyakit gigi?",
+        "Penyakit gigi apa saja yang ada",
+        "Sebutkan semua penyakit gigi"
+      ],
+      "responses": [
+        "Berikut beberapa jenis penyakit gigi yang bisa dideteksi: \n" +
+        "1. Impaksi gigi\n" +
+        "2. Implan gigi\n" +
+        "3. Kerak gigi (plak/tartar)\n" +
+        "4. Kista gigi\n" +
+        "5. Odontektomi gigi bungsu\n" +
+        "6. Endo primer dengan periode sekunder\n" +
+        "7. Lesi endodontik primer\n" +
+        "8. Lesi gabungan sejati\n" +
+        "9. Lesi periodontal primer\n" +
+        "10. Periode primer dengan endo sekunder\n\n" +
+        "Kamu bisa menanyakan masing-masing jenis untuk info gejala, penyebab, dan pencegahannya."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "fallback",
+      "patterns": ["Tidak tahu", "Tidak mengerti", "Bantuan", "Lainnya", "Apa yang harus saya lakukan?"],
+      "responses": ["Maaf, saya tidak mengerti pertanyaan Anda. Silakan tanyakan seputar kesehatan gigi atau upload gambar untuk deteksi penyakit gigi."],
+      "context": [""]
     }
-    
-]
+  ]
 }
